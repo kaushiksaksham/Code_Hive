@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduMind AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="image/image.png">
+            <span>EduMind AI</span>
+        </div>   
+        
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#mindmap">Mind Map</a>
+            <a href="#scoreboard">Scoreboard</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="tagline">EMPOWER YOUR MIND WITH AI</p>
+
+            <h1>
+                Welcome to <span>EduMind AI</span>
+            </h1>
+
+            <p>
+                <B>Learn smarter with interactive quizzes,
+                visual mind maps, and performance tracking.
+            </p>
+
+            <a href="#dashboard" class="primary-btn">
+                Explore Features
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="section">
+
+        <h2>Learning Dashboard</h2>
+
+        <p class="section-description">
+            Choose a tool to improve your learning experience.
+        </p>
+
+        <div class="feature-container">
+
+            <!-- Quiz Card -->
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+
+                <h3>Quiz Generator</h3>
+
+                <p>
+                    Select a topic and test your knowledge
+                    with interactive questions.
+                </p>
+
+                <a href="#quiz" class="card-btn">
+                    Start Quiz
+                </a>
+            </div>
+
+
+            <!-- Mind Map Card -->
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+
+                <h3>Mind Map Maker</h3>
+
+                <p>
+                    Organize important concepts and
+                    understand topics visually.
+                </p>
+
+                <a href="#mindmap" class="card-btn">
+                    Create Mind Map
+                </a>
+            </div>
+
+
+            <!-- Scoreboard Card -->
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+
+                <h3>Scoreboard</h3>
+
+                <p>
+                    Track your quiz scores and
+                    monitor your learning progress.
+                </p>
+
+                <a href="#scoreboard" class="card-btn">
+                    View Scores
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Quiz Generator -->
+    <section id="quiz" class="section tool-section">
+
+        <h2>📝 Quiz Generator</h2>
+
+        <p class="section-description">
+            Choose a topic and generate a practice quiz.
+        </p>
+
+        <div class="tool-box">
+
+            <label for="quizTopic">Select Topic</label>
+
+            <select id="quizTopic">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+            </select>
+
+            <button id="generateQuiz" class="primary-btn">
+                Generate Quiz
+            </button>
+
+            <div id="quizArea"></div>
+
+            <div id="quizResult"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Mind Map Maker -->
+    <section id="mindmap" class="section tool-section">
+
+        <h2>🧠 Mind Map Maker</h2>
+
+        <p class="section-description">
+            Enter a topic and its subtopics to create a visual mind map.
+        </p>
+
+        <div class="tool-box">
+
+            <label for="mindTopic">Main Topic</label>
+
+            <input
+                type="text"
+                id="mindTopic"
+                placeholder="Example: Artificial Intelligence"
+            >
+
+            <label for="subTopics">Subtopics</label>
+
+            <textarea
+                id="subTopics"
+                placeholder="Enter subtopics separated by commas"
+            ></textarea>
+
+            <button id="generateMindMap" class="primary-btn">
+                Generate Mind Map
+            </button>
+
+            <div id="mindMapArea" class="mindmap-area"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Scoreboard -->
+    <section id="scoreboard" class="section tool-section">
+
+        <h2>🏆 Scoreboard</h2>
+
+        <p class="section-description">
+            View the scores saved on this browser.
+        </p>
+
+        <div class="tool-box">
+
+            <div id="scoreSummary"></div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Score</th>
+                            <th>Total</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="scoreTable"></tbody>
+                </table>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button id="clearScores" class="danger-btn">Clear Scores</button>
+            </div>
+            <button >
+                
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p> EduMind AI | Learn Smart | Grow Fast</p>
+    </footer>
+
+
+    <script src="Database.js"></script>
+
+</body>
+</html>
